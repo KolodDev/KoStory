@@ -9,4 +9,24 @@
     <string name="open">open</string>
     <string name="close">close</string>
 
+    <string name="story1_title">First story</string>
+    <string name="story1_subtitle">This is first story</string>
+    <string name="story1_desc">how I learn Kotlin</string>
+
+    <string name="story2_title">Second story</string>
+    <string name="story2_subtitle">This is second story</string>
+    <string name="story2_desc">how I learn Kotlin</string>
+
+    <string name="story3_title">Third story</string>
+    <string name="story3_subtitle">This is third story</string>
+    <string name="story3_desc">how I learn Kotlin</string>
+
+    <string name="story4_title">Fourth story</string>
+    <string name="story4_subtitle">This is fourth story</string>
+    <string name="story4_desc">how I learn Kotlin</string>
+
+    <string name="story5_title">Fifth story</string>
+    <string name="story5_subtitle">This is fifth story</string>
+    <string name="story5_desc">how I learn Kotlin</string>
+
 </resources>

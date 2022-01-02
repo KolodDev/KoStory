@@ -8,6 +8,8 @@ import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +18,8 @@ class MainActivity : AppCompatActivity() {
     private var drawerLayout:DrawerLayout? = null
     private var toolbarView:androidx.appcompat.widget.Toolbar? = null
     private var navigationView:NavigationView? = null
+    private var recyclerView:RecyclerView? = null
+    private var buttonAddStory:FloatingActionButton? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,13 +34,9 @@ class MainActivity : AppCompatActivity() {
         setupDrawer()
         updateEmailInHeader(email!!)
         drawerClicks()
+        openAddStoryActivity()
+        displayStories()
 
-    }
-
-    private fun updateEmailInHeader(email:String) {
-        val headerView = navigationView?.getHeaderView(0)
-        val textViewEmail = headerView?.findViewById<TextView>(R.id.tvEmail)
-        textViewEmail?.text = email
     }
 
     private fun connectView() {
@@ -44,6 +44,8 @@ class MainActivity : AppCompatActivity() {
         drawerLayout = findViewById(R.id.drawer)
         toolbarView = findViewById(R.id.toolbar)
         navigationView = findViewById(R.id.navView)
+        recyclerView = findViewById(R.id.storiesRecV)
+        buttonAddStory = findViewById(R.id.btnAddStory)
     }
 
     private fun setupDrawer(){
@@ -62,6 +64,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun updateEmailInHeader(email:String) {
+        val headerView = navigationView?.getHeaderView(0)
+        val textViewEmail = headerView?.findViewById<TextView>(R.id.tvEmail)
+        textViewEmail?.text = email
+    }
+
     private fun drawerClicks(){
         navigationView?.setNavigationItemSelectedListener {
             when(it.itemId){
@@ -78,5 +86,25 @@ class MainActivity : AppCompatActivity() {
                 else -> true
             }
         }
+    }
+    private fun openAddStoryActivity(){
+        buttonAddStory?.setOnClickListener {
+            val i = Intent(this,AddStoryActivity::class.java)
+            startActivity(i)
+        }
+    }
+
+    private fun displayStories(){
+        val storiesArray = ArrayList<Story>()
+
+        storiesArray.add(Story(getString(R.string.story1_title),getString(R.string.story1_subtitle),getString(R.string.story1_desc)))
+        storiesArray.add(Story(getString(R.string.story2_title),getString(R.string.story2_subtitle),getString(R.string.story2_desc)))
+        storiesArray.add(Story(getString(R.string.story3_title),getString(R.string.story3_subtitle),getString(R.string.story3_desc)))
+        storiesArray.add(Story(getString(R.string.story4_title),getString(R.string.story4_subtitle),getString(R.string.story4_desc)))
+        storiesArray.add(Story(getString(R.string.story5_title),getString(R.string.story5_subtitle),getString(R.string.story5_desc)))
+
+        val customAdapter = CustomAdapter(storiesArray,this)
+        recyclerView?.adapter = customAdapter
+
     }
 }
