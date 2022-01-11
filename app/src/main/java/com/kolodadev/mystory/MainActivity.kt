@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.RecyclerView
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     private var textViewEmail:TextView? = null
     private var drawerLayout:DrawerLayout? = null
-    private var toolbarView:androidx.appcompat.widget.Toolbar? = null
+    private var toolbarView:Toolbar? = null
     private var navigationView:NavigationView? = null
     private var recyclerView:RecyclerView? = null
     private var buttonAddStory:FloatingActionButton? = null
@@ -29,10 +30,10 @@ class MainActivity : AppCompatActivity() {
         val email = intent.getStringExtra("email")
         connectView()
         textViewEmail?.text = email
-        setSupportActionBar(toolbarView!!)
+        setSupportActionBar(toolbarView)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         setupDrawer()
-        updateEmailInHeader(email!!)
+        updateEmailInHeader(email)
         drawerClicks()
         openAddStoryActivity()
         displayStories()
@@ -64,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun updateEmailInHeader(email:String) {
+    private fun updateEmailInHeader(email:String?) {
         val headerView = navigationView?.getHeaderView(0)
         val textViewEmail = headerView?.findViewById<TextView>(R.id.tvEmail)
         textViewEmail?.text = email
@@ -105,6 +106,17 @@ class MainActivity : AppCompatActivity() {
 
         val customAdapter = CustomAdapter(storiesArray,this)
         recyclerView?.adapter = customAdapter
+
+        if(intent.getStringExtra("title")!= null){
+            val title = intent.getStringExtra("title")
+            val subtitle = intent.getStringExtra("subtitle")
+            val desc = intent.getStringExtra("desc")
+
+            val newStory = Story(title!!,subtitle!!,desc!!)
+            storiesArray.add(newStory)
+            customAdapter.notifyDataSetChanged()
+        }
+
 
     }
 }

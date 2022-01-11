@@ -8,8 +8,12 @@
     <string name="logout">Logout</string>
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_subtitle">Enter SubTitle</string>
+    <string name="enter_desc">Enter Description</string>
+    <string name="add_story">Add Story</string>
 
-    <string name="story1_title">First story</string>
+    <string name="story1_title">First Story</string>
     <string name="story1_subtitle">This is first story</string>
     <string name="story1_desc">how I learn Kotlin</string>
 
