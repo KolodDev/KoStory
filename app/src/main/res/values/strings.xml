@@ -13,24 +13,51 @@
     <string name="enter_desc">Enter Description</string>
     <string name="add_story">Add Story</string>
 
-    <string name="story1_title">First Story</string>
-    <string name="story1_subtitle">This is first story</string>
-    <string name="story1_desc">how I learn Kotlin</string>
+    <string name="story1_title">First Week</string>
+    <string name="story1_subtitle">if statement</string>
+    <string name="story1_desc">
+        Day1: introduction\n
+        Day2: if statements
+    </string>
 
-    <string name="story2_title">Second story</string>
-    <string name="story2_subtitle">This is second story</string>
-    <string name="story2_desc">how I learn Kotlin</string>
+    <string name="story2_title">Second Week</string>
+    <string name="story2_subtitle">Variables,Arrays,Loops</string>
+    <string name="story2_desc">
+        Day1: Variables\n
+        Day2: Arrays\n
+        Day3: Loops\n
+        Day4: OOP
+    </string>
 
-    <string name="story3_title">Third story</string>
-    <string name="story3_subtitle">This is third story</string>
-    <string name="story3_desc">how I learn Kotlin</string>
+    <string name="story3_title">Third Week</string>
+    <string name="story3_subtitle">Android Studio</string>
+    <string name="story3_desc">
+        Day1: Android Studio\n
+        Day2: UI\n
+        Day3: Logcat,ArrayAdapter,ListView\n
+        Day4: Debug,Custom Layout,Custom class
+    </string>
 
-    <string name="story4_title">Fourth story</string>
-    <string name="story4_subtitle">This is fourth story</string>
-    <string name="story4_desc">how I learn Kotlin</string>
+    <string name="story4_title">Fourth Week</string>
+    <string name="story4_subtitle">Activity,Fragments</string>
+    <string name="story4_desc">
+        Day1: Activity\n
+        Day2: Fragments\n
+        Day3: Fragments Tablayout , Fragments Pager Adapter\n
+        Day4: Bottom Navigation
+    </string>
 
-    <string name="story5_title">Fifth story</string>
-    <string name="story5_subtitle">This is fifth story</string>
-    <string name="story5_desc">how I learn Kotlin</string>
+    <string name="story5_title">Fifth Week</string>
+    <string name="story5_subtitle">Github,Toast,Snackbar</string>
+    <string name="story5_desc">
+        Day1: Github\n
+        Day2: Toast,Snackbar\n
+        Day3: Functions\n
+        Day4: Navigation Drawer , Navigation View
+    </string>
+
+    <string name="story6_title">Sixth Week</string>
+    <string name="story6_subtitle">Project</string>
+    <string name="story6_desc">Final Project</string>
 
 </resources>

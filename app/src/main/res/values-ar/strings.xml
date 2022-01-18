@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KoStory</string>
+    <string name="username">أسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="i_accept_terms">أوافق على الشروط</string>
+    <string name="home">الرئيسية</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="enter_title">أدخل العنوان</string>
+    <string name="enter_subtitle">أدخل العنوان الفرعي</string>
+    <string name="enter_desc">أدخل الوصف</string>
+    <string name="add_story">أضف قصة</string>
+
+    <string name="story1_title">الاسبوع الأول</string>
+    <string name="story1_subtitle">مقدمة,الجمل الشرطية,المتغيرات</string>
+    <string name="story1_desc">
+        اليوم الأول : مقدمة عن المعسكر وطريقة التدريب , مقدمة عن الكوتلن
+        \n
+        اليوم الثاني : مقدمة عن الجمل الشرطية , العلامات المنطقية والحسابية , أنواع الجمل الشرطية
+    </string>
+
+    <string name="story2_title">الأسبوع الثاني</string>
+    <string name="story2_subtitle">المتغيرات,المصفوفات,حلقات التكرار</string>
+    <string name="story2_desc">
+        اليوم الأول : أنواع المتغيرات , خصائص المتغيرات , المتغيرات الاختيارية
+         \n
+        اليوم الثاني : المصفوفات , دوال المصفوفات , ArrayList , HashMap
+         \n
+        اليوم الثالث : حلقات التكرار , انواع حلقات التكرار , التحكم في حلقات التكرار
+         \n
+        اليوم الرابع : البرمجة كائنية التوجه , المبادئ الاساسية للبرمجة كائنية التوجه
+    </string>
+
+    <string name="story3_title">الأسبوع الثالث</string>
+    <string name="story3_subtitle">بيئة أندرويد ستوديو</string>
+    <string name="story3_desc">
+        اليوم الأول : إنشاء محاكي داخل بيئة العمل , التعرف على بيئة أندرويد ستوديو
+         \n
+        اليوم الثاني : تصميم واجهة المستخدم
+         \n
+        اليوم الثالث : Logcat , ArrayAdapter , ListView
+         \n
+        اليوم الرابع : Debug , custom Layout , custom class , custom Adapter
+    </string>
+
+    <string name="story4_title">الأسبوع الرابع</string>
+    <string name="story4_subtitle">Activity,Fragments</string>
+    <string name="story4_desc">
+        اليوم الأول : Activity , Activity Lifecycle , Intents
+         \n
+        اليوم الثاني : Fragments
+         \n
+        اليوم الثالث : Fragments Tablayout , Fragment Pager Adapter
+         \n
+        اليوم الرابع : Bottom Navigation
+    </string>
+
+    <string name="story5_title">الأسبوع الخامس</string>
+    <string name="story5_subtitle">Github,Toast,Snackbar</string>
+    <string name="story5_desc">
+        اليوم الأول : Github
+         \n
+        اليوم الثاني : الاستثناءات والتعامل معها , Toast , Snackbar
+         \n
+        اليوم الثالث : الدوال , دوال المدخلات
+         \n
+        اليوم الرابع : Navigation Drawer , Navigation View
+    </string>
+
+    <string name="story6_title">الأسبوع السادس</string>
+    <string name="story6_subtitle">المشروع</string>
+    <string name="story6_desc">المشروع النهائي</string>
+</resources>

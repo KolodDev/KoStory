@@ -103,6 +103,7 @@ class MainActivity : AppCompatActivity() {
         storiesArray.add(Story(getString(R.string.story3_title),getString(R.string.story3_subtitle),getString(R.string.story3_desc)))
         storiesArray.add(Story(getString(R.string.story4_title),getString(R.string.story4_subtitle),getString(R.string.story4_desc)))
         storiesArray.add(Story(getString(R.string.story5_title),getString(R.string.story5_subtitle),getString(R.string.story5_desc)))
+        storiesArray.add(Story(getString(R.string.story6_title),getString(R.string.story6_subtitle),getString(R.string.story6_desc)))
 
         val customAdapter = CustomAdapter(storiesArray,this)
         recyclerView?.adapter = customAdapter
